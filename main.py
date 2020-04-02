@@ -6,7 +6,7 @@ from sqlalchemy.dialects import postgresql
 from sqlalchemy.orm import sessionmaker
 from sys import getsizeof
 
-engine = create_engine('postgres://postgres:Ralf%4012358@db/wiki', echo=True)
+engine = create_engine('postgres://wiki:wiki@db/wiki', echo=True)
 conn = engine.connect()
 Session = sessionmaker(bind=engine)
 session = Session()
